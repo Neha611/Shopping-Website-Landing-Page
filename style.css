@@ -39,7 +39,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 5%;
+    padding: 1rem 5%;
     background: #fff;
     box-shadow: var(--box-shadow);
 }
@@ -53,13 +53,50 @@ body{
 }
 
 .header .navbar a{
+    position: relative;
     font-size: 1.5rem;
     margin: 2rem;
     font-weight:500;
     color: var(--black);
 }
 
+.header .navbar a::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(246, 42, 181);
+    height: 3.5px;
+    width: 0%;
+    left: 0;
+    bottom: -25px;
+    transition: 0.1s;
+}
+
+.header .navbar a:hover::after{
+    width: 100%; 
+}
+
+.header .navbar #men:hover::after{
+    background-color:rgb(246, 42, 181);
+}
+
+.header .navbar #women:hover::after{
+    background-color:rgb(17, 247, 166);
+}
+
+.header .navbar #kids:hover::after{
+    background-color:rgb(3, 249, 249);
+}
+
+.header .navbar #beauty:hover::after{
+    background-color:rgb(247, 101, 17);
+}
+
+.header .navbar #homeandliving:hover::after{
+    background-color:rgb(209, 17, 247);
+}
+
 .header .icons div{
+    position: relative;
     height: 4.5rem;
     width: 4.5rem;
     line-height: 4.5rem;
@@ -68,6 +105,45 @@ body{
     margin-right: .3rem;
     cursor: pointer;
     text-align: center;
+}
+
+.header .icons div::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(246, 42, 181);
+    height: 3.5px;
+    width: 0%;
+    left: 0;
+    bottom: -15px;
+    transition: 0.1s;
+}
+
+.header .icons div:hover::after{
+    width: 100%;
+}
+
+.header .icons #login-btn:hover::after{
+    background-color: #3cff00;
+}
+
+.header .icons #login-btn:hover{
+    color:#03fbd6;
+}
+
+.header .icons #wishlist-btn:hover::after{
+    background-color: #2e3cff;
+}
+
+.header .icons #wishlist-btn:hover{
+    color:#ff006f;
+}
+
+.header .icons #cart-btn:hover::after{
+    background-color: #dd00ff;
+}
+
+.header .icons #cart-btn:hover{
+    color:#f68d03;
 }
 
 .header .search-form{
@@ -95,5 +171,16 @@ body{
     font-size: 1.5rem;
     padding-right: 1.5rem;
     color: rgb(174, 173, 173);
+    cursor: pointer;
+}
+
+.banner{
+    padding: 10rem 7%;
+    background: #fff;
+}
+
+.banner .banner-img{
+    width: 130rem;
+    height: 55rem;
     cursor: pointer;
 }
