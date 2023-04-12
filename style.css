@@ -23,11 +23,48 @@ html{
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    scroll-padding-top: 7rem;
+    scroll-padding-top: 5rem;
 }
 
 body{
     background: #eee;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    padding: 1rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: var(--black);
+}
+
+.heading span{
+    background: rgb(255, 221, 0);
+    color: #e349eb;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0,93% 50%,100% 99%,0% 100%,7% 50%,0% 0%);
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover{
+    background: black;
+    color: #fff;
 }
 
 .header{
@@ -175,12 +212,59 @@ body{
 }
 
 .banner{
-    padding: 10rem 7%;
+    margin-top: 6rem;
     background: #fff;
 }
 
 .banner .banner-img{
-    width: 130rem;
-    height: 55rem;
+    width: 120rem;
+    height: 40rem;
     cursor: pointer;
 }
+
+.card-section .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,2fr));
+    gap: 0.5rem;
+}
+
+.card-section .box-container .box{
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.card-section .box-container .box img{
+    margin: 1rem 0;
+    height: 25rem;
+    cursor: pointer;
+}
+
+.card-section .box-container .box img:hover{
+    height: 27rem;
+}
+
+.budget-buys .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,2fr));
+    gap: 0.5rem;
+}
+
+.budget-buys .box-container .box{
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.budget-buys .box-container .box img{
+    margin: 1rem 0;
+    height: 15rem;
+    cursor: pointer;
+}
+
